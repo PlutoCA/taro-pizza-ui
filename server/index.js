@@ -5,6 +5,7 @@ const Inert = require("@hapi/inert");
 const path = require('path');
 
 const init = async () => {
+  console.log(path.resolve(__dirname, '../doc/build'));
   const server = Hapi.server({
     port: process.env.PORT || 5000,
     host: "0.0.0.0",
