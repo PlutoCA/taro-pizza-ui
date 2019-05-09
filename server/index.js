@@ -7,7 +7,7 @@ const path = require('path');
 const init = async () => {
   const server = Hapi.server({
     port: process.env.PORT || 5000,
-    host: "0.0.0.",
+    host: "0.0.0.0",
     routes: {
       files: {
         relativeTo: path.join(__dirname, "../doc/build")
