@@ -4,9 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./server/index.js",
-    "dev": "nodemon ./server/index.js",
-    "copy-build": "node ./util/copy_build.js"
+    "dev": "nodemon ./server/index.js"
   },
   "dependencies": {
     "@hapi/hapi": "^18.3.1",

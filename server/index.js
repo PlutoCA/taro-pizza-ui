@@ -10,7 +10,7 @@ const init = async () => {
     host: "0.0.0.0",
     routes: {
       files: {
-        relativeTo: path.resolve(__dirname, "../doc/$build")
+        relativeTo: path.resolve(__dirname, "../doc/$build/")
       }
     }
   });
@@ -20,17 +20,34 @@ const init = async () => {
   server.route([
     {
       method: "GET",
-      path: "/{param*}",
+      path: "/static/{param*}",
       handler: {
         directory: {
-          path: ".",
+          path: "./static",
           index: true
         }
       }
     },
     {
       method: "GET",
+      path: "/{params*}",
+      handler: {
+        directory: {
+          path: './',
+          index: false
+        }
+      }
+    },
+    {
+      method: "GET",
       path: "/",
+      handler: {
+        file: "index.html"
+      }
+    },
+    {
+      method: "GET",
+      path: "/docs/{param*}",
       handler: {
         file: "index.html"
       }
