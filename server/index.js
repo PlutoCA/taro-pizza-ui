@@ -10,7 +10,7 @@ const init = async () => {
     host: "0.0.0.0",
     routes: {
       files: {
-        relativeTo: path.join(__dirname, "../doc/build")
+        relativeTo: path.resolve(__dirname, "../doc/build")
       }
     }
   });
