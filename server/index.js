@@ -6,7 +6,7 @@ const path = require("path");
 const fs = require("fs");
 
 const init = async () => {
-  fs.readdir(path.resolve(__dirname, "../doc/build"), (err, files) => {
+  fs.readdir(path.resolve(__dirname, "../doc/$build"), (err, files) => {
     console.log("files", files);
   });
   const server = Hapi.server({
@@ -14,7 +14,7 @@ const init = async () => {
     host: "0.0.0.0",
     routes: {
       files: {
-        relativeTo: path.resolve(__dirname, "../doc/build")
+        relativeTo: path.resolve(__dirname, "../doc/$build")
       }
     }
   });
