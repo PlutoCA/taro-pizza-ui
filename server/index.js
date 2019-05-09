@@ -3,12 +3,8 @@
 const Hapi = require("@hapi/hapi");
 const Inert = require("@hapi/inert");
 const path = require("path");
-const fs = require("fs");
 
 const init = async () => {
-  fs.readdir(path.resolve(__dirname, "../doc/$build"), (err, files) => {
-    console.log("files", files);
-  });
   const server = Hapi.server({
     port: process.env.PORT || 5000,
     host: "0.0.0.0",
