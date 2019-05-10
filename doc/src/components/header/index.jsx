@@ -38,7 +38,7 @@ class PageHeader extends PureComponent {
             <div className='logo'>
               <Link to='/'>
                 <img className='logo-img' src={Logo} alt="logo" />
-                <span>Taro Pizza UI</span>
+                <span>Pizza UI</span>
               </Link>
             </div>
             <i className='icon icon-menu nav-icon' onClick={this.toggleMenu} />

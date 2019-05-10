@@ -35,7 +35,7 @@ class Index extends PureComponent {
           <div className="bg-bottom-shadow" />
           <div className="info-container">
             <div className="img-container" />
-            <h1>Taro Pizza UI</h1>
+            <h1>Pizza UI</h1>
             <div className="info-desc">
               一套基于 Taro 框架开发的多端业务组件库
             </div>
