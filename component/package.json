@@ -1,8 +1,9 @@
 {
   "name": "pizza_ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "taro_pizza_ui",
+  "types": "./@types/index.d.ts",
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
