@@ -9,13 +9,13 @@
 在 Taro 文件中引入组件
 
 ```js
-import { PiArea } from 'taro-pizza-ui'
+import { PiArea } from 'pizza-ui'
 ```
 
 **组件依赖的样式文件（仅按需引用时需要）**
 
 ```scss
-@import "~taro-pizza-ui/dist/style/components/area.scss";
+@import "~pizza-ui/dist/style/components/area.scss";
 ```
 
 ## 用法

@@ -3,6 +3,11 @@
   "version": "0.1.2",
   "private": false,
   "description": "taro_pizza_ui",
+  "main": "dist/index.js",
+  "sideEffects": [
+    "*.scss",
+    "*.css"
+  ],
   "types": "./@types/index.d.ts",
   "scripts": {
     "build:weapp": "taro build --type weapp",
