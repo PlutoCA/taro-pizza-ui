@@ -1,9 +1,14 @@
 import Taro, { Component, Config } from "@tarojs/taro";
 import { View, Text } from "@tarojs/components";
 import { PiArea } from "pizza_ui";
+import { PiAccordion } from "pizza_ui";
 import "./index.scss";
 
-export default class Index extends Component {
+type state = {
+  open: boolean;
+};
+
+export default class Index extends Component<{}, state> {
   /**
    * 指定config的类型声明为: Taro.Config
    *
@@ -14,6 +19,18 @@ export default class Index extends Component {
   config: Config = {
     navigationBarTitleText: "首页"
   };
+
+  constructor() {
+    super(...arguments);
+    this.state = {
+      open: false
+    };
+  }
+  handleClick(value) {
+    this.setState({
+      open: value
+    });
+  }
 
   componentWillMount() {}
 
@@ -36,6 +53,14 @@ export default class Index extends Component {
         <PiArea onAddressChange={this.onAddressChange} mode={1}>
           <View className="button">选择省市</View>
         </PiArea>
+        <PiAccordion
+          open={this.state.open}
+          onClick={this.handleClick.bind(this)}
+          title="标题一"
+          text='这个个测试文本'
+        >
+          <View>手风琴展示</View>
+        </PiAccordion>
       </View>
     );
   }
