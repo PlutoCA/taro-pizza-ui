@@ -1,6 +1,6 @@
 {
   "name": "pizza_ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "description": "taro_pizza_ui",
   "main": "dist/index.js",
