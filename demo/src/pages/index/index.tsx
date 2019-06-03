@@ -1,11 +1,11 @@
 import Taro, { Component, Config } from "@tarojs/taro";
 import { View, Text } from "@tarojs/components";
-import { PiArea } from "pizza_ui";
-import { PiAccordion } from "pizza_ui";
+import { PiArea, PiAccordion, PiCalendar } from "pizza_ui";
 import "./index.scss";
 
 type state = {
   open: boolean;
+  selectedDates: {start: any, end: any}[];
 };
 
 export default class Index extends Component<{}, state> {
@@ -23,7 +23,17 @@ export default class Index extends Component<{}, state> {
   constructor() {
     super(...arguments);
     this.state = {
-      open: false
+      open: false,
+      selectedDates: [
+        {
+          start: "2019/06/03",
+          end: "2019/06/07"
+        },
+        {
+          start: "2019/06/09",
+          end: "2019/06/11"
+        }
+      ]
     };
   }
   handleClick(value) {
@@ -47,6 +57,10 @@ export default class Index extends Component<{}, state> {
   }
 
   render() {
+    const { selectedDates } = this.state
+    if (!selectedDates || selectedDates.length === 0) {
+      return null;
+    }
     return (
       <View className="index">
         <Text>Hello world!</Text>
@@ -61,6 +75,9 @@ export default class Index extends Component<{}, state> {
         >
           <View>手风琴展示</View>
         </PiAccordion>
+        <PiCalendar selectedDates={selectedDates}
+        onSelectDate={(res) => {console.log('查看选择的日期', res)}}
+        ></PiCalendar>
       </View>
     );
   }
