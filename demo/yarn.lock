@@ -3054,7 +3054,7 @@ date-now@^0.1.4:
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
   integrity sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
 
-dayjs@^1.7.7:
+dayjs@^1.7.7, dayjs@^1.8.14:
   version "1.8.14"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.14.tgz#43e4f62830c2c3342c3fcd25934dc9162dbe6f38"
   integrity sha512-AVhDmRTe541iWirnoeFSSDDGvCT6HWaNQ4z2WmmzXMGZj6ph6ydao2teKq/eUtR43GPJXlYFD+C/SotG1P9wUQ==
@@ -7060,10 +7060,10 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
 
-pizza_ui@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/pizza_ui/-/pizza_ui-0.1.6.tgz#96f5c4df6e1b3a0a9ebe9466963d887319592a80"
-  integrity sha512-cRIM3oBLKP2MrKs4aWZfh1zAUSpUqsPGfqAvqz+LDOPaEq29fr+6gDReAM05SVtZuxW2Kt8rS80Iu8E6LxseVA==
+pizza_ui@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/pizza_ui/-/pizza_ui-0.1.7.tgz#62578c6c032557eaabbc98b0f699ce86738507a6"
+  integrity sha512-BQ5DOl71rzSh39DNFJHHgzWjP5vcppaekbYhuZFpMOc91lsHEHLs+JVgzN9rQRiP/M+xsV9qF1swNhztu0v2XQ==
   dependencies:
     "@tarojs/components" "1.2.26"
     "@tarojs/router" "1.2.26"
@@ -7074,6 +7074,8 @@ pizza_ui@^0.1.6:
     "@tarojs/taro-tt" "1.2.26"
     "@tarojs/taro-weapp" "1.2.26"
     at-ui-style "^1.5.1"
+    bind-decorator "^1.0.11"
+    dayjs "^1.8.14"
     nerv-devtools "^1.3.9"
     nervjs "^1.3.9"
 
