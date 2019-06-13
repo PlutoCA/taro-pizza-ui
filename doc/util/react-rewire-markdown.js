@@ -19,7 +19,7 @@ const findIndexAndRules = (rulesSource, ruleMatcher) => {
 };
 
 const createLoaderMatcher = loader => rule =>
-  rule.loader && rule.loader.indexOf(`/${loader}/`) !== -1;
+  rule.loader && rule.loader.indexOf(`${loader}`) !== -1;
 
 const fileLoaderMatcher = createLoaderMatcher("file-loader");
 

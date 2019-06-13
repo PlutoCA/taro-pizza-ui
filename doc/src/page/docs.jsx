@@ -30,7 +30,7 @@ class Docs extends PureComponent {
     const result = pathname.match(reg)
     const curDemoPath = pathMap[result[1]] || ''
     const curPageUrl = `${window.location.origin}${window.location.pathname}/h5/index.html#/pages/${curDemoPath}/index`
-
+    console.log(data)
     return (
       <div className='app' id='app'>
         <PageHeader collapse />

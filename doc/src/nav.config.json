@@ -19,6 +19,14 @@
           {
             "title": "地址选择器",
             "name": "area"
+          },
+          {
+            "title": "手风琴",
+            "name": "accordion"
+          },
+          {
+            "title": "日历",
+            "name": "calendar"
           }
         ]
       }]
